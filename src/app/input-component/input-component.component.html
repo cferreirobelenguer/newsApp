@@ -16,7 +16,7 @@
                 <h3>Enter your favorite category</h3>
             </div>
             <div class="categories">
-                <select [(ngModel)]="categorySelect" (change)="capturarCategory()" class="styleInput">
+                <select [(ngModel)]="categorySelect" (change)="captureCategory()" class="styleInput">
                     <option value="0">Select an option</option>
                     <option>general</option>
                     <option>entertainment</option>
@@ -25,7 +25,11 @@
             </div>
             <div class="news_button">
                 <button class="btn" id="styleButton" (click)="changeView()">Go to home</button>
-            </div>  
+            </div>
+            <div class="news_info">
+                <!--Component child, it shows the results to the api-->
+                <app-show-info></app-show-info>
+            </div>
         </div>
     </div>
 </ng-template>

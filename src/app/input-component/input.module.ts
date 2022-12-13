@@ -2,19 +2,30 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { InputComponentComponent } from './input-component.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { NewsService } from './services/news.service';
+import { ShowInfoComponent } from '../show-info/show-info.component';
+
 
 @NgModule({
   declarations: [
-    InputComponentComponent
+    //import the components
+    InputComponentComponent,
+    ShowInfoComponent
   ],
   exports:[
-    InputComponentComponent
+    //exports the component to call in app.module.ts
+    InputComponentComponent,
+    ShowInfoComponent
   ],
   imports: [
+    //the modules
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: []
+  //the service
+  providers: [NewsService]
 })
 export class InputModule { }

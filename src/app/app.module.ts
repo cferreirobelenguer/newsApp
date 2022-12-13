@@ -7,6 +7,7 @@ import { CoverComponent } from './cover/cover.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { FooterComponent } from './footer/footer.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
