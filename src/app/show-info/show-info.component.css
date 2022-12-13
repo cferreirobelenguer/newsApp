@@ -1,0 +1,17 @@
+.info_news{
+    display:flex;
+    flex-direction: row;
+    padding:10px;
+    justify-content: space-around;
+    align-items: center;
+}
+#styleButton{
+    border-style: solid;
+    border-color: #72c9cf;
+    background-color: #72c9cf;
+    border-radius: 50px;
+    padding: 10px;
+    color:white;
+    font-family: "appFontRegular";
+    
+}

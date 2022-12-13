@@ -3,6 +3,7 @@ import { news } from './interface/newsInterface';
 import { NewsService } from './services/news.service';
 
 
+
 @Component({
   selector: 'app-input-component',
   templateUrl: './input-component.component.html',
@@ -13,7 +14,8 @@ export class InputComponentComponent {
   public categorySelect:string
   public datosNews:news;
   public view:boolean;
-  public infoTotal:news[]=[];
+  public infoTotal:news[];
+
   //Implements service in the component
     constructor(private newsService:NewsService){
       this.categorySelect=""
@@ -25,12 +27,19 @@ export class InputComponentComponent {
         category:"",
         country:""
       }
+      this.infoTotal=[]
     }
+  
+  
   captureCategory(){
     //select information is captured with ngModel
     this.categorySelect=this.categorySelect
     console.log(this.categorySelect)
+    
+  }
+  searchInfo(){
     this.captureNews()
+    this.categorySelect=""
   }
   changeView(){
     //boolean that it changes the view when the user press the button

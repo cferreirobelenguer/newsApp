@@ -1,1 +1,16 @@
-<p>show-info works!</p>
+<div *ngIf="infoTotal">
+    
+    <div class="info_news" *ngFor="let info of infoTotal">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{info.name}}</h5>
+                <p class="card-text">{{info.country}}</p>
+                <p class="card-text">{{info.description}}</p>
+                <a href="{{info.url}}" class="btn" id="styleButton">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+

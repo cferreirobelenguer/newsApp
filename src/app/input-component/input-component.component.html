@@ -23,12 +23,15 @@
                     <option>sports</option>
                 </select>
             </div>
-            <div class="news_button">
+            <div class="news_button p-2">
+                <button class="btn" id="styleButton" (click)="searchInfo()">Search</button>
+            </div>
+            <div class="news_button p-2">
                 <button class="btn" id="styleButton" (click)="changeView()">Go to home</button>
             </div>
             <div class="news_info">
                 <!--Component child, it shows the results to the api-->
-                <app-show-info></app-show-info>
+                <app-show-info [infoTotal]="infoTotal" [categorySelect]="categorySelect"></app-show-info>
             </div>
         </div>
     </div>
