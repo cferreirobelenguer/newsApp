@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "appFontBold";
+    src: url("../../assets/fonts/Poppins-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "appFontRegular";
+    src: url("../../assets/fonts/Poppins-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.cover_container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 20px 50px 50px;
+}
+.cover_title{
+    justify-self: flex-start;
+    padding: 10px 10px 10px 0px;
+    font-family: "appFontBold";
+    color:hsl(255, 11%, 22%);
+    font-size:2vw
+}
+.cover_subtitle{
+    justify-self: flex-start;
+    padding: 10px 10px 10px 0px;
+    font-family: "appFontRegular";
+    font-size: 1.7vw;
+    color:hsl(257, 7%, 63%);
+    font-weight: 400;
+}
+.cover_image{
+    justify-self: flex-end;
+    padding: 10px;
+}
+#imagen{
+    width: 50vw;
+    height: 30vw;
+}

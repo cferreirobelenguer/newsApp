@@ -1,0 +1,29 @@
+.footer_container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 50px 20px 100px 50px;
+    background-color: hsl(260, 8%, 14%);
+    color:white;
+    justify-content:space-between;
+    align-items: center;
+}
+.footer_logo{
+    padding-bottom: 20px;
+    color:white;
+}
+.footer_socialmedia{
+    padding-right: 50px;
+    padding-bottom: 20px;
+    gap:20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.social{
+    
+    width: 2vw;
+    height: 2vw;
+}
