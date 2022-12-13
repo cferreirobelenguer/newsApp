@@ -18,6 +18,6 @@ export class InputComponentComponent {
     console.log(this.categorySelect)
   }
   changeView(){
-    this.view=true
+    this.view=!this.view
   }
 }

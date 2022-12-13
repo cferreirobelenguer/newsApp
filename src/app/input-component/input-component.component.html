@@ -1,4 +1,5 @@
-<div class="news_cover" *ngIf="!view else vistaInput">
+<!--Vsta inicial de portada-->
+<div class="news_container" *ngIf="!view else vistaInput">
     <div class="news_title">
 
     </div>
@@ -7,16 +8,24 @@
     </div>  
 </div>
 
-
-<ng-template #vistaInput class="news_container">
-    <div class="news_options">
-        <div class="categories">
-            <select [(ngModel)]="categorySelect" (change)="capturarCategory()">
-                <option value="0">Select an option</option>
-                <option>general</option>
-                <option>entertainment</option>
-                <option>sports</option>
-            </select>
+<!-- Al pulsar get started se renderiza esta vista con el input-->
+<ng-template #vistaInput >
+    <div class="news_container">
+        <div class="news_options">
+            <div class="news_title">
+                <h3>Enter your favorite category</h3>
+            </div>
+            <div class="categories">
+                <select [(ngModel)]="categorySelect" (change)="capturarCategory()" class="styleInput">
+                    <option value="0">Select an option</option>
+                    <option>general</option>
+                    <option>entertainment</option>
+                    <option>sports</option>
+                </select>
+            </div>
+            <div class="news_button">
+                <button class="btn" id="styleButton" (click)="changeView()">Go to home</button>
+            </div>  
         </div>
     </div>
 </ng-template>
